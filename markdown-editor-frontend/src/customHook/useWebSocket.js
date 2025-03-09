@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:4000");
+const socket = io("https://markdown-editor-app.onrender.com");
 
 export default function useWebSocket(setHtml) {
   useEffect(() => {
