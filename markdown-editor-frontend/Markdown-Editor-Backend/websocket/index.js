@@ -3,7 +3,7 @@ const { processMarkdown } = require("../utils/markdown");
 
 const setupWebSocket = (server) => {
   const io = new Server(server, {
-    cors: { origin: "http://localhost:3000", methods: ["GET", "POST"], credentials: true },
+    cors: { origin: "https://markdown-editor-app-delta.vercel.app", methods: ["GET", "POST"], credentials: true },
   });
 
   io.on("connection", (socket) => {
